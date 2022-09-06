@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import CenterSearch from "./components/Center";
 import Categories from "./components/categories/Categories";
 import Features from "./components/features/Features";
-import Footer from "./components/Footer";
+import ExtraData from "./components/ExtraData";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
       </div>
       <br />
       <div className="col-12 mb-5">
-        <Footer />
+        <ExtraData />
       </div>
 
       <div className="footer">
