@@ -13,7 +13,7 @@ function App() {
         <Header />
       </div>
       <hr />
-      <div className="col-12 ">
+      <div className="col-12 mt-5">
         <CenterSearch />
       </div>
       <br />
@@ -29,12 +29,9 @@ function App() {
         <ExtraData />
       </div>
 
-      <div className="footer">
+      <div className="footer  bg-light ">
         <footer className="text-center text-lg-start">
-          <div
-            className="text-center p-3"
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-          >
+          <div className="text-center p-3">
             <span> React Commmerce Template</span>
           </div>
         </footer>
