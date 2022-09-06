@@ -1,38 +1,43 @@
-
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import CenterSearch from './components/Center';
-import Categories from './components/categories/Categories';
-import Features from './components/features/Features';
-import Footer from './components/Footer';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import CenterSearch from "./components/Center";
+import Categories from "./components/categories/Categories";
+import Features from "./components/features/Features";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App p-4">
       <div className="col-12 fixed-top">
-        <Header/>
+        <Header />
       </div>
       <hr />
       <div className="col-12 ">
-        <CenterSearch/>
+        <CenterSearch />
       </div>
       <br />
       <div className="col-12 ">
-        <Categories/>
+        <Categories />
       </div>
       <br />
       <div className="col-12">
-        <Features/>
+        <Features />
       </div>
       <br />
       <div className="col-12 mb-5">
-        <Footer/>
+        <Footer />
       </div>
 
-
       <div className="footer">
-      <Header/>
+        <footer className="text-center text-lg-start">
+          <div
+            className="text-center p-3"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+          >
+            <span> React Commmerce Template</span>
+          </div>
+        </footer>
       </div>
     </div>
   );
