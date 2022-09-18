@@ -1,19 +1,29 @@
-import "./App.css";
+import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
 import CenterSearch from "../components/Center";
 import Categories from "../components/categories/Categories";
 import Features from "../components/features/Features";
 import ExtraData from "../components/ExtraData";
+import { useContext } from "react";
+import { AuthContext } from "../context/auth/AuthContext";
 
 function HomeClient() {
+  const auth = useContext(AuthContext);
   return (
-    <div className="App p-4">
-      <div className="col-12 fixed-top">
+    <div className="p-4">
+      <div className="col-12 ">
         <Header />
       </div>
       <hr />
       <div className="col-12 mt-5">
+        {auth.user != null ? (
+          <>
+            <h1>{auth.user.name}</h1>
+          </>
+        ) : (
+          ""
+        )}
         <CenterSearch />
       </div>
       <br />
