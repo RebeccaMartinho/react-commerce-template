@@ -35,7 +35,7 @@ function CenterSearch() {
           </div>
         </div>
 
-        <div className="d-flex w-100 justify-content-cente ">
+        <div className="d-flex w-100 justify-content-center ">
           <img src={oPlanet} className="mr-5" width={"30%"} alt="" />
         </div>
       </div>
