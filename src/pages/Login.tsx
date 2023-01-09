@@ -1,22 +1,12 @@
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../context/auth/AuthContext";
+import { useState } from "react";
 
 export function Login() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const auth = useContext(AuthContext);
-  const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const res = await auth.sigIn(email, password);
-    if (!res.success) {
-      alert(res.message);
-    } else {
-      navigate("/dashboard");
-    }
   };
   return (
     <div className="col-12 bg-light d-flex justify-content-center">
