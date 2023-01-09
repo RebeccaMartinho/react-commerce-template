@@ -31,13 +31,13 @@ function HomeClient() {
         <Categories />
       </div>
       <br />
-      <div className="col-12">
+      {/* <div className="col-12">
         <Features />
       </div>
       <br />
       <div className="col-12 mb-5">
         <ExtraData />
-      </div>
+      </div> */}
 
       <div className="footer  bg-light ">
         <footer className="text-center text-lg-start">
