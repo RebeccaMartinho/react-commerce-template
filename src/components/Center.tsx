@@ -5,13 +5,15 @@ function CenterSearch() {
   return (
     <div className="col-12 d-flex justify-content-center align-items-center">
       <div
-        className="col-10 rounded d-flex flex-column-reverse flex-md-row flex-sm-row align-items-center justify-content-around"
+        className="col-11 rounded d-flex flex-column-reverse flex-md-row align-items-center justify-content-around"
         style={{ height: "400px", backgroundColor: "#dbefce" }}
       >
-        <div className="col-12 col-md-5 col-sm-5 d-flex flex-column align-items-start justify-content-around h-75 p-5">
+        <div className="col-md-6 col-sm-6 d-flex flex-column align-items-start justify-content-around h-75 p-5">
           <div className="d-flex flex-column align-items-start">
             <h1 className="font-weight-bold">The Best Products in the World</h1>
-            <h6>in Every Category</h6>
+            <div className="w-100">
+              <h6 className="float-center">in Every Category</h6>
+            </div>
           </div>
 
           <div className="flex-shrink-1 d-flex w-100">
@@ -35,7 +37,7 @@ function CenterSearch() {
           </div>
         </div>
 
-        <div className="d-flex w-100 justify-content-center ">
+        <div className="col-5 d-flex justify-content-center ">
           <img src={oPlanet} className="mr-5" width={"30%"} alt="" />
         </div>
       </div>
