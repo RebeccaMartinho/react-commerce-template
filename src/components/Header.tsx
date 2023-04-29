@@ -10,7 +10,7 @@ import {
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth/AuthContext";
-import logo from "../public/planeta-terra.png";
+import logo from "../public/rollingreen/logo.png";
 
 function Header() {
   const auth = useContext(AuthContext);
@@ -18,9 +18,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+        <img src={logo} width={100} alt="" />
         <button
           className="navbar-toggler"
           type="button"
@@ -36,27 +34,35 @@ function Header() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                Catalogo
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                Sobre Nos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <a className="nav-link" href="#">
+                Contato
+              </a>
             </li>
           </ul>
-          <form className="d-flex" role="search">
+          <form
+            className="d-flex"
+            role="search"
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
             <input
               className="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Produtos"
               aria-label="Search"
             />
             <button className="btn btn-outline-success" type="submit">
-              Search
+              Pesquisar
             </button>
           </form>
         </div>
