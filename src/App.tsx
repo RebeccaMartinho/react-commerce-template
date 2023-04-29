@@ -7,6 +7,10 @@ import { HomeAdmin } from "./pages/HomeAdmin";
 import { ErrorPage } from "./pages/Error";
 import { Button } from "react-bootstrap";
 import { RequireAuth } from "./context/auth/RequireAuth";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 function App() {
   return (

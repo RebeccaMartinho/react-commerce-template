@@ -1,4 +1,4 @@
-const api_url = "";
+const api_url = "https://ens-server.intelbras.com.br";
 
 async function send({ method, path, data, token }: any) {
   const opts: any = { method, headers: {} };

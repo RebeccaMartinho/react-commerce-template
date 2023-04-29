@@ -7,6 +7,7 @@ import Features from "../components/features/Features";
 import ExtraData from "../components/ExtraData";
 import { useContext } from "react";
 import { AuthContext } from "../context/auth/AuthContext";
+import Icon from "@mui/material/Icon";
 
 function HomeClient() {
   const auth = useContext(AuthContext);
@@ -31,14 +32,14 @@ function HomeClient() {
         <Categories />
       </div>
       <br />
+      <Icon>star</Icon>
       <div className="col-12">
         <Features />
       </div>
       <br />
-      {/* <div className="col-12 mb-5">
+      <div className="col-12 mb-5">
         <ExtraData />
-      </div> */}
-
+      </div>
       <div className="footer  bg-light ">
         <footer className="text-center text-lg-start">
           <div className="text-center p-3">
