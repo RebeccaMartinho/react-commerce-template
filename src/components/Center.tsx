@@ -6,7 +6,7 @@ function CenterSearch() {
     <div className="col-12 d-flex justify-content-center align-items-center">
       <div
         className="col-11 rounded d-flex flex-column-reverse flex-md-row align-items-center justify-content-around"
-        style={{ height: "400px", backgroundColor: "rgba(73, 229, 73, 0.6)" }}
+        style={{ height: "400px", backgroundColor: "rgba(73, 229, 73, 0.2)" }}
       >
         <div className="col-md-6 col-sm-6 d-flex flex-column align-items-start justify-content-around h-75 p-5">
           <div className="d-flex flex-column align-items-start">

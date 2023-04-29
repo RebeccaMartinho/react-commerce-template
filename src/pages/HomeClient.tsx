@@ -28,6 +28,9 @@ function HomeClient() {
         <CenterSearch />
       </div>
       <br />
+      <Icon>star</Icon>
+
+      <br />
       <div className="col-12 ">
         <Categories />
       </div>
@@ -36,10 +39,10 @@ function HomeClient() {
       <div className="col-12">
         <Features />
       </div>
-      <br />
+      {/* <br />
       <div className="col-12 mb-5">
         <ExtraData />
-      </div>
+      </div> */}
       <div className="footer  bg-light ">
         <footer className="text-center text-lg-start">
           <div className="text-center p-3">

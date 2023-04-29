@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import {
   Search,
   Bell,
@@ -15,6 +15,16 @@ import logo from "../public/rollingreen/logo.png";
 function Header() {
   const auth = useContext(AuthContext);
   const navigate = useNavigate();
+
+  const [hover, setHover] = useState(false);
+
+  const buttonStyle = {
+    backgroundColor: hover ? "#49e549" : "transparent",
+    color: hover ? "#fff" : "#49e549",
+    border: `1px solid #49e549`,
+
+    cursor: "pointer",
+  };
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -61,7 +71,12 @@ function Header() {
               placeholder="Produtos"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button
+              className="btn"
+              style={buttonStyle}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+            >
               Pesquisar
             </button>
           </form>
