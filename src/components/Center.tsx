@@ -1,18 +1,20 @@
 import { Search } from "react-bootstrap-icons";
-import oPlanet from "../public/atom-svgrepo-com.svg";
+import oPlanet from "../public/rollingreen/logo.png";
 
 function CenterSearch() {
   return (
     <div className="col-12 d-flex justify-content-center align-items-center">
       <div
         className="col-11 rounded d-flex flex-column-reverse flex-md-row align-items-center justify-content-around"
-        style={{ height: "400px", backgroundColor: "#dbefce" }}
+        style={{ height: "400px", backgroundColor: "rgba(73, 229, 73, 0.6)" }}
       >
         <div className="col-md-6 col-sm-6 d-flex flex-column align-items-start justify-content-around h-75 p-5">
           <div className="d-flex flex-column align-items-start">
-            <h1 className="font-weight-bold">The Best Products in the World</h1>
+            <h1 className="font-weight-bold">
+              Eleve sua experiência com os melhores produtos de headshop
+            </h1>
             <div className="w-100">
-              <h6 className="float-center">in Every Category</h6>
+              <h6 className="float-center">Em todas as categorias</h6>
             </div>
           </div>
 
@@ -29,8 +31,8 @@ function CenterSearch() {
               <input
                 type="text"
                 className="border-0 shadow-none rounded-2 form-control"
-                placeholder="Products and reviews"
-                aria-label="Products and reviews"
+                placeholder="Produtos e categorias"
+                aria-label="Produtos e categorias"
                 aria-describedby="basic-addon1"
               />
             </div>
@@ -38,7 +40,7 @@ function CenterSearch() {
         </div>
 
         <div className="col-5 d-flex justify-content-center ">
-          <img src={oPlanet} className="mr-5" width={"30%"} alt="" />
+          <img src={oPlanet} className="mr-5" width={"100%"} alt="" />
         </div>
       </div>
     </div>
