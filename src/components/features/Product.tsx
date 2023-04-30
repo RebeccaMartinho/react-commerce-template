@@ -12,20 +12,38 @@ function Product(props: ImageText) {
       className="card d-flex flex-column align-items-center justify-content-center "
       style={{ width: "22%" }}
     >
-      <img className="" width={"80%"} src={image} />
+      <img className="m-2" width={"80%"} src={image} />
       <div className="w-100 d-flex flex-column align-items-start justify-content-center">
-        <span className="text-start p-1" data-abc="true">
+        <span
+          style={{ fontSize: "14px" }}
+          className="fw-bold text-start p-1"
+          data-abc="true"
+        >
           BANDEJA DE METAL G ROLLZ GRANDE DOG EINSTEIN
         </span>
-        <span className="text-start p-1">Bandejas</span>
+        <small
+          style={{ fontSize: "10px" }}
+          className="text-start text-muted p-1"
+        >
+          Bandejas
+        </small>
       </div>
 
       <div className="w-100 d-flex flex-column align-items-start justify-content-center">
         <hr className="w-100" />
-        <span className="text-start p-1" data-abc="true">
+        <span
+          className=" fw-bold text-start p-1"
+          style={{ fontSize: "14px" }}
+          data-abc="true"
+        >
           R$ 3,999
         </span>
-        <span className="text-start p-1 ">Pix, Credito, Boleto Parcelado</span>
+        <small
+          style={{ fontSize: "10px" }}
+          className="text-start text-muted p-1 "
+        >
+          Pix, Credito, Boleto Parcelado
+        </small>
         <hr className="w-100" />
       </div>
       <div className="w-100 d-flex align-items-center justify-content-center mb-3">
