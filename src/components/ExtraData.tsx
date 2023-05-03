@@ -1,26 +1,21 @@
 import { Button } from "react-bootstrap";
 import Item from "./features/Product";
+import logo from "../public/rollingreen/logo.png";
+
 function Footer() {
   return (
     <div className="col-12 d-flex flex-column justify-content-center align-items-center p-2">
-      <div className="col-10 d-flex justify-content-between align-items-center">
-        <div className="col-2 d-flex flex-column align-items-start justify-content-start">
+      <div className="col-4 d-flex justify-content-between align-items-center">
+        <div className=" d-flex align-items-start justify-content-start">
           <div className="d-flex flex-column align-items-start justify-content-start">
-            <span>Why Trust</span>
-            <h3>Consumer</h3>
-            <h3>Voice?</h3>
+            <img src={logo} width={"100%"} alt="" />
           </div>
-          <Button variant="primary">Learn More</Button>
-        </div>
-
-        <div className="col-10 d-flex justify-content-between align-items-center">
-          <Item size="350px" image="features/amazon.jpeg" />
-          <Item size="350px" image="features/amazon.jpeg" />
-          <Item size="350px" image="features/amazon.jpeg" />
-
-          {/* <Item image="chamada-telefonica.png"/>
-            <Item image="computador-portatil.png"/>
-            <Item image="video.png"/> */}
+          <div className="border w-100">
+            <span>Entre em Conato</span>
+            <span>12 12344-1234</span>
+            <span>ou por whatsapp</span>
+            <span>12 12344-1234</span>
+          </div>
         </div>
       </div>
     </div>

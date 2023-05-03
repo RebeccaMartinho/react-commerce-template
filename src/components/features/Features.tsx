@@ -19,6 +19,8 @@ function Features() {
         <Item size="280px" image="features/amazon.jpeg" />
         <Item size="280px" image="features/amazon.jpeg" />
         <Item size="280px" image="features/amazon.jpeg" />
+        <Item size="280px" image="features/amazon.jpeg" />
+        <Item size="280px" image="features/amazon.jpeg" />
       </div>
     </div>
   );
