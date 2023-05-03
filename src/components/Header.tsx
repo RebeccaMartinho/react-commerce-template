@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
+import Cart from "./shoppingCart/CartSidebar";
 import {
   Search,
   Bell,
   CartCheck,
   Clock,
   Person,
-  ArrowUpRightCircle,
+  ArrowUpRightCircle
 } from "react-bootstrap-icons";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +23,6 @@ function Header() {
     backgroundColor: hover ? "#49e549" : "transparent",
     color: hover ? "#fff" : "#49e549",
     border: `1px solid #49e549`,
-
     cursor: "pointer",
   };
   return (
@@ -44,7 +44,7 @@ function Header() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Catalogo
+                Catálogo
               </a>
             </li>
             <li className="nav-item">
@@ -80,6 +80,9 @@ function Header() {
               Pesquisar
             </button>
           </form>
+          <div className="mx-2"> 
+            <Cart/>
+          </div>
         </div>
       </div>
     </nav>

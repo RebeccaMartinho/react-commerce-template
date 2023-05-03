@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.offcanvas{
+  width:40% !important;
+}  
 
 .App-logo {
   height: 40vmin;
